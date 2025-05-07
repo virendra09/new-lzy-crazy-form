@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 function Review() {
   const [name, setName] = useState('Virendra Yadav');
-  // const [mobile, setMobile] = useState('+91');
   const [profileImage, setProfileImage] = useState(null);
 
   const handleNameChange = (e) => {
@@ -11,17 +10,7 @@ function Review() {
     }
   };
 
-  // const handleMobileChange = (e) => {
-  //   const value = e.target.value;
-  
-  //   // If the user deletes everything, re-add +91 
-  //   if (!value.startsWith('+91')) {
-  //     setMobile('+91 ');
-  //   } else {
-  //     setMobile(value);
-  //   }
-  // };
-
+ 
 const [countryCode, setCountryCode] = useState('+91');
 const [mobileNumber, setMobileNumber] = useState('');
 
@@ -49,10 +38,6 @@ const isFormValid =
     }
   };
 
-  // const isFormValid =
-  // name.trim() !== '' &&
-  // mobile.replace(/\D/g, '').length === 12 && // +91 + 10 digits
-  // profileImage;
 
 
   return (
@@ -105,15 +90,7 @@ const isFormValid =
 
         {/* Phone Input */}
         <label className="block font-medium text-sm mt-4 mb-1">Mobile Phone Number*</label>
-        {/* <input
-        //   type="tel"
-        //   value={mobile}
-        //   onChange={handleMobileChange}
-        //   className="w-full p-2 border border-gray-300 rounded text-sm"
-        //   placeholder="+91"
-        //   maxLength={16}
-        // /> */}
-
+      
        
         <div className='  w-full flex gap:1 border border-gray-300 rounded'>
         <span className="px-3 py-2  text-sm inline">
