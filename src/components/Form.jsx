@@ -125,16 +125,12 @@ function Form() {
   
 
   return (
-    <div className="w-full  mx-auto">
-<h2 className="text-[20px] font-extrabold uppercase text-center text-[rgb(0, 3, 7)] mb-4">
-  POST YOUR AD
-</h2>
-
-
-      <div className="border border-gray-300 rounded-md mb-6 p-4 width-full">
+    <div className="w-full max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto px-2 md:px-8 lg:px-16">
+      <h2 className="text-[20px] md:text-2xl lg:text-3xl font-extrabold uppercase text-center text-[rgb(0,3,7)] mb-4">POST YOUR AD</h2>
+      <div className="border border-gray-300 rounded-md mb-6 p-4 md:p-8 width-full bg-white">
         {/* Category Section */}
         <div className="mb-6">
-          <label className=" block text-[20px] font-extrabold leading-[27.6px] uppercase  text-[rgb(2,8,18)]  mb-4">SELECTED CATEGORY</label>
+          <label className="block text-[20px] md:text-xl font-extrabold leading-[27.6px] uppercase text-[rgb(2,8,18)] mb-4">SELECTED CATEGORY</label>
          <a> <span className="text-[rgb(141,144,148)] text-[11px] font-normal leading-[13.8px] cursor-pointer  bg-[rgba(0,0,0,0)]">
                  Mobiles
           </span></a>
@@ -153,7 +149,7 @@ function Form() {
 
         {/* Ad Details */}
         
-        <h3 className="text-lg font-semibold mb-3">INCLUDE SOME DETAILS</h3>
+        <h3 className="text-lg md:text-xl font-semibold mb-3">INCLUDE SOME DETAILS</h3>
 
         <div className="mb-4">
           <label className="block  mb-1">Brand *</label>
@@ -248,7 +244,7 @@ function Form() {
             onChange={handlePhotoChange}
             className="hidden"
           />
-          <div className="grid grid-cols-4 gap-1">
+          <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-1 md:gap-2">
             {[...Array(12)].map((_, index) => (
               <div
                 key={index}
