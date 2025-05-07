@@ -125,7 +125,7 @@ function Form() {
   
 
   return (
-    <div className="w-full max-w-3xl mx-auto">
+    <div className="w-full  mx-auto">
 <h2 className="text-[20px] font-extrabold uppercase text-center text-[rgb(0, 3, 7)] mb-4">
   POST YOUR AD
 </h2>

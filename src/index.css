@@ -29,11 +29,12 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-
+width:80%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #747bff;
 }
 
 h1 {
